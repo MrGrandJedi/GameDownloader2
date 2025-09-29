@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameVault - Download Your Favorite Games</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-gamepad"></i>
+          <span>GameVault</span>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#games" class="nav-link">Games</a>
+          </li>
+          <li class="nav-item">
+            <a href="#categories" class="nav-link">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Download Epic Games</h1>
+        <p class="hero-subtitle">
+          Discover and download the latest and greatest games from our vast
+          collection
+        </p>
+        <button class="cta-button">Explore Games</button>
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://picsum.photos/600/400?random=1"
+          alt="Gaming Hero Image"
+        />
+      </div>
+    </section>
+
+    <!-- Featured Games Section -->
+    <section id="games" class="featured-games">
+      <div class="container">
+        <h2 class="section-title">Featured Games</h2>
+        <div class="games-grid" id="gamesGrid">
+          <!-- Games will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+      <div class="container">
+        <h2 class="section-title">Game Categories</h2>
+        <div class="categories-grid">
+          <div class="category-card">
+            <i class="fas fa-rocket"></i>
+            <h3>Action</h3>
+            <p>Fast-paced games with intense combat and adventure</p>
+          </div>
+          <div class="category-card">
+            <i class="fas fa-chess"></i>
+            <h3>Strategy</h3>
+            <p>Think ahead and plan your moves to victory</p>
+          </div>
+          <div class="category-card">
+            <i class="fas fa-car"></i>
+            <h3>Racing</h3>
+            <p>High-speed thrills and competitive racing</p>
+          </div>
+          <div class="category-card">
+            <i class="fas fa-magic"></i>
+            <h3>RPG</h3>
+            <p>Immersive role-playing adventures</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="1000">0</h3>
+            <p>Games Available</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="50000">0</h3>
+            <p>Happy Gamers</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="100">0</h3>
+            <p>New Games Monthly</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="24">0</h3>
+            <p>Support Hours</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-gamepad"></i>
+              <span>GameVault</span>
+            </div>
+            <p>
+              Your ultimate destination for downloading the best games. Join
+              millions of gamers worldwide.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#games">Games</a></li>
+              <li><a href="#categories">Categories</a></li>
+              <li><a href="#about">About Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+              <li><a href="#">Action Games</a></li>
+              <li><a href="#">Strategy Games</a></li>
+              <li><a href="#">Racing Games</a></li>
+              <li><a href="#">RPG Games</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Download Guide</a></li>
+              <li><a href="#">System Requirements</a></li>
+              <li><a href="#">Contact Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 GameVault. All rights reserved. | Privacy Policy | Terms
+            of Service
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Download Modal -->
+    <div id="downloadModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header">
+          <i class="fas fa-download"></i>
+          <h2>Download Game</h2>
+        </div>
+        <div class="modal-body">
+          <p id="downloadMessage">Preparing your download...</p>
+          <div class="download-progress">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
+          <div class="download-info">
+            <p><strong>File Size:</strong> <span id="fileSize">2.5 GB</span></p>
+            <p><strong>Version:</strong> <span id="gameVersion">1.0.0</span></p>
+            <p><strong>Platform:</strong> Windows, Mac, Linux</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
